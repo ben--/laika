@@ -88,7 +88,7 @@ module.exports = {
     deps.ready(function() {
       logger.info('  loading initial app pool...');
       appPool = new AppPool({
-          size: 2,
+          size: 6,
           appDir: './',
           mongoPort: argv.mport,
           settingsFile: (argv.settings)? path.resolve(argv.settings) : null
